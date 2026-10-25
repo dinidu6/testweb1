@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Download papers | YOUR NAME ICT</title>
+<meta name="description" content="Download ICT past papers and notes.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Noto+Sans+Sinhala:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body data-page="papers">
+<header class="nav">
+  <a class="logo" href="/">YOUR NAME <span>ICT</span></a>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">Menu</button>
+  <nav id="menu"></nav>
+</header>
+  <section class="pagehead" data-fx="mini"><div class="ph-text"><h1>Download papers and notes</h1><p>Past papers, model papers and short notes as PDF.</p></div></section>
+<main><section class="section">
+  <div class="toolbar">
+    <label class="sel">Class<select id="classSel"></select></label>
+    <label class="sel">Type<select id="typeSel"><option value="all">All types</option><option>Past paper</option><option>Model paper</option><option>Notes</option></select></label>
+    <input id="search" type="search" placeholder="Search, e.g. 2024" aria-label="Search papers">
+  </div>
+  <p class="count" id="paperCount" aria-live="polite"></p>
+  <ul class="papers" id="paperList"></ul>
+</section></main>
+<footer>
+  <p>© 2026 YOUR NAME ICT. All rights reserved.</p>
+  <p>info@example.lk · 070 000 0000 · <a href="#">Facebook</a> · <a href="#">YouTube</a></p>
+</footer>
+<script src="/app.js"></script>
+<script src="/pages.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admin | YOUR NAME ICT</title>
+<meta name="description" content="Manage classes, students, recordings and papers.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Noto+Sans+Sinhala:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body data-page="admin">
+<header class="nav">
+  <a class="logo" href="/">YOUR NAME <span>ICT</span></a>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">Menu</button>
+  <nav id="menu"></nav>
+</header>
+  <section class="pagehead" data-fx="mini"><div class="ph-text"><h1>Teacher dashboard</h1><p>Approve students and manage your content.</p></div></section>
+<main><section class="section">
+  <div class="tabs">
+    <button class="tab active" data-tab="enr">Join requests</button><button class="tab" data-tab="cls">Classes</button>
+    <button class="tab" data-tab="rec">Recordings</button><button class="tab" data-tab="pap">Papers</button>
+  </div>
+  <div class="panel" id="p-enr"><ul class="papers" id="enrList"></ul></div>
+  <div class="panel" id="p-cls" hidden>
+    <form id="clsForm"><h3>Add a class</h3>
+      <label>Name<input name="name" required></label>
+      <label>Level<select name="level"><option value="ol">Grade 6-11</option><option value="al">A/L</option></select></label>
+      <label>Medium<select name="lang"><option value="si">Sinhala</option><option value="en">English</option></select></label>
+      <label>Schedule<input name="schedule" placeholder="Sunday 3.30 PM"></label>
+      <label>Monthly fee (LKR)<input name="price" type="number" min="1" required></label>
+      <button class="btn" type="submit">Add class</button><p class="msg" role="status"></p></form>
+    <ul class="papers" id="clsList"></ul></div>
+  <div class="panel" id="p-rec" hidden>
+    <form id="recForm"><h3>Add a recording</h3>
+      <label>Class<select name="classId"></select></label>
+      <label>Title<input name="title" required></label>
+      <label>Topic<input name="topic"></label>
+      <label>YouTube link (Unlisted)<input name="video" required placeholder="https://youtu.be/..."></label>
+      <label>Length<input name="length" placeholder="48 min"></label>
+      <label>Date<input name="date" type="date"></label>
+      <label class="check"><input name="free" type="checkbox"> Free for everyone</label>
+      <button class="btn" type="submit">Add recording</button><p class="msg" role="status"></p></form>
+    <ul class="papers" id="recList"></ul></div>
+  <div class="panel" id="p-pap" hidden>
+    <form id="papForm"><h3>Upload a paper</h3>
+      <label>Class<select name="classId"></select></label>
+      <label>Title<input name="title" required></label>
+      <label>Type<select name="type"><option>Past paper</option><option>Model paper</option><option>Notes</option></select></label>
+      <label>Year<input name="year" type="number" min="2000" max="2100"></label>
+      <label>PDF file (up to 20 MB)<input name="file" type="file" accept="application/pdf" required></label>
+      <label class="check"><input name="free" type="checkbox"> Free for everyone</label>
+      <button class="btn" type="submit">Upload</button><p class="msg" role="status"></p></form>
+    <ul class="papers" id="papList"></ul></div>
+</section></main>
+<footer>
+  <p>© 2026 YOUR NAME ICT. All rights reserved.</p>
+  <p>info@example.lk · 070 000 0000 · <a href="#">Facebook</a> · <a href="#">YouTube</a></p>
+</footer>
+<script src="/app.js"></script>
+<script src="/pages.js"></script>
+</body>
+</html>

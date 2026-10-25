@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Join classes | YOUR NAME ICT</title>
+<meta name="description" content="Choose your ICT class, pay and upload your slip.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Noto+Sans+Sinhala:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body data-page="join">
+<header class="nav">
+  <a class="logo" href="/">YOUR NAME <span>ICT</span></a>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">Menu</button>
+  <nav id="menu"></nav>
+</header>
+  <section class="pagehead" data-fx="mini"><div class="ph-text"><h1>Join a class</h1><p>Choose a class, pay by bank transfer and upload your slip.</p></div></section>
+<main><section class="section">
+  <div class="notice" id="needLogin" hidden><b>Log in first.</b> Create a free account so we can add you to your class. <a href="/login.html">Log in or create an account</a></div>
+  <form id="joinForm" class="joinform" novalidate>
+    <p>Joining as <b id="who"></b></p>
+    <fieldset><legend>1. Choose a class</legend><div id="classPicker" class="picker"></div></fieldset>
+    <fieldset><legend>2. Pay the monthly fee</legend><div class="paybox" id="payBox"></div></fieldset>
+    <fieldset><legend>3. Upload your payment slip</legend>
+      <label>Photo or PDF of the slip (up to 5 MB)<input name="slip" type="file" accept="image/jpeg,image/png,application/pdf" required></label>
+    </fieldset>
+    <button class="btn" type="submit">Send for approval</button>
+    <p class="msg" id="msg" role="status"></p>
+  </form>
+</section></main>
+<footer>
+  <p>© 2026 YOUR NAME ICT. All rights reserved.</p>
+  <p>info@example.lk · 070 000 0000 · <a href="#">Facebook</a> · <a href="#">YouTube</a></p>
+</footer>
+<script src="/app.js"></script>
+<script src="/pages.js"></script>
+</body>
+</html>

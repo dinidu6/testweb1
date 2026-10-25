@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Log in | YOUR NAME ICT</title>
+<meta name="description" content="Log in or create your student account.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Noto+Sans+Sinhala:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body data-page="login">
+<header class="nav">
+  <a class="logo" href="/">YOUR NAME <span>ICT</span></a>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">Menu</button>
+  <nav id="menu"></nav>
+</header>
+  <section class="pagehead" data-fx="mini"><div class="ph-text"><h1>Student login</h1><p>Log in to watch recordings and download papers.</p></div></section>
+<main><section class="section">
+  <div class="auth">
+    <div class="tabs"><button class="tab active" data-tab="login">Log in</button><button class="tab" data-tab="reg">Create account</button></div>
+    <div class="auth-card">
+      <form id="loginForm">
+        <label>Phone number<input name="phone" type="tel" required autocomplete="tel"></label>
+        <label>Password<input name="password" type="password" required autocomplete="current-password"></label>
+        <button class="btn" type="submit">Log in</button><p class="msg" role="status"></p>
+      </form>
+      <form id="regForm" hidden>
+        <label>Student name<input name="name" required autocomplete="name"></label>
+        <label>Phone number<input name="phone" type="tel" required autocomplete="tel"></label>
+        <label>School <input name="school"></label>
+        <label>Password (8 or more characters)<input name="password" type="password" minlength="8" required autocomplete="new-password"></label>
+        <button class="btn" type="submit">Create account</button><p class="msg" role="status"></p>
+      </form>
+    </div>
+  </div>
+</section></main>
+<footer>
+  <p>© 2026 YOUR NAME ICT. All rights reserved.</p>
+  <p>info@example.lk · 070 000 0000 · <a href="#">Facebook</a> · <a href="#">YouTube</a></p>
+</footer>
+<script src="/app.js"></script>
+<script src="/pages.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Watch recordings | YOUR NAME ICT</title>
+<meta name="description" content="Watch recorded ICT lessons.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Noto+Sans+Sinhala:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body data-page="recordings">
+<header class="nav">
+  <a class="logo" href="/">YOUR NAME <span>ICT</span></a>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">Menu</button>
+  <nav id="menu"></nav>
+</header>
+  <section class="pagehead" data-fx="mini"><div class="ph-text"><h1>Watch recordings</h1><p>Approved students can watch every class. Free lessons are open to all.</p></div></section>
+<main>
+  <section class="section">
+    <div class="toolbar">
+      <div class="filters" id="chips" role="group" aria-label="Filter by class"></div>
+      <input id="search" type="search" placeholder="Search topic, e.g. binary" aria-label="Search recordings">
+    </div>
+    <p class="count" id="recCount" aria-live="polite"></p>
+    <div class="grid" id="recGrid"></div>
+  </section>
+  <div class="modal" id="modal" hidden role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-box">
+      <div class="modal-head"><h2 id="modalTitle"></h2><button id="closeModal" class="btn small">Close</button></div>
+      <div class="video"><iframe id="frame" title="Lesson video" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; encrypted-media; fullscreen" allowfullscreen></iframe></div>
+    </div>
+  </div>
+</main>
+<footer>
+  <p>© 2026 YOUR NAME ICT. All rights reserved.</p>
+  <p>info@example.lk · 070 000 0000 · <a href="#">Facebook</a> · <a href="#">YouTube</a></p>
+</footer>
+<script src="/app.js"></script>
+<script src="/pages.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICT Online Classes Grade 6-9 and O/L | YOUR NAME ICT</title>
+<meta name="description" content="Online ICT classes in Sinhala and English with recordings and papers.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Noto+Sans+Sinhala:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body data-page="index">
+<header class="nav">
+  <a class="logo" href="/">YOUR NAME <span>ICT</span></a>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">Menu</button>
+  <nav id="menu"></nav>
+</header>
+<main>
+  <section class="stage" id="stage" data-fx="full" aria-label="Welcome">
+    <div class="stage-bar">
+      <div>
+        <p class="tag">Online ICT class English Medium</p>
+        <h1>ICT classes for <span id="typed">Grade 6-11</span><i class="caret"></i></h1>
+      </div>
+      <div class="actions">
+        <a class="btn" href="/join.html">Join a class</a>
+        <a class="btn ghost" href="/recordings.html">Watch recordings</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="try">
+    <div class="try-text">
+      <h2>Try a lesson before you join</h2>
+      <p class="lead">Live classes, recorded lessons and weekly paper discussions for Grade 6 to 11 and Paper classes. Miss a class? Watch it again any time.</p>
+    </div>
+    <div class="converter" aria-labelledby="convTitle">
+      <h2 id="convTitle">Number to binary</h2>
+      <label for="num">Type a number (0 to 255)</label>
+      <input id="num" type="number" min="0" max="255" value="41">
+      <div class="bits" id="bits" aria-live="polite"></div>
+      <p class="sum" id="sum"></p>
+      <p class="hint">Tap a bit to switch it on or off.</p>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div><strong data-stat="students">0</strong><span>Students registered</span></div>
+    <div><strong data-stat="recordings">0</strong><span>Recorded lessons</span></div>
+    <div><strong data-stat="papers">0</strong><span>Papers and notes</span></div>
+    <div><strong data-stat="classes">0</strong><span>Classes open</span></div>
+  </section>
+
+  <section class="section">
+    <h2>Choose your class</h2>
+    <div class="filters" role="group" aria-label="Filter classes">
+      <button class="chip active" data-filter="all">All</button>
+      <button class="chip" data-filter="ol">Grade 6-9</button>
+      <button class="chip" data-filter="al">0/L</button>
+      
+    </div>
+    <div class="grid" id="classGrid"></div>
+  </section>
+
+  <section class="section alt">
+    <h2>How it works</h2>
+    <ol class="steps">
+      <li><b>Create an account</b><span>Use your phone number.</span></li>
+      <li><b>Choose a class and pay</b><span>Bank transfer, then upload the slip.</span></li>
+      <li><b>We approve you</b><span>Usually within one day.</span></li>
+      <li><b>Learn</b><span>Watch recordings and download papers any time.</span></li>
+    </ol>
+  </section>
+</main>
+<footer>
+  <p>© 2026 YOUR NAME ICT. All rights reserved.</p>
+  <p>info@example.lk · 070 000 0000 · <a href="#">Facebook</a> · <a href="#">YouTube</a></p>
+</footer>
+<script src="/app.js"></script>
+<script src="/pages.js"></script>
+</body>
+</html>
